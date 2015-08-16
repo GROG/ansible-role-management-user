@@ -1,6 +1,6 @@
 # Management user
 
-[![Ansible Galaxy](http://img.shields.io/badge/galaxy-GROG.management--user-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/)
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-GROG.management--user-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/4793)
 [![Build Status](https://travis-ci.org/GROG/ansible-role-management-user.svg?branch=master)](https://travis-ci.org/GROG/ansible-role-management-user)
 
 A role for managing a management user.
