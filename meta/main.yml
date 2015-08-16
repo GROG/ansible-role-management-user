@@ -1,0 +1,29 @@
+---
+galaxy_info:
+  author: G. Roggemans
+  description: A role for managing a management user.
+  company: GROG
+  license: LGPLv3
+  min_ansible_version: 1.9
+  platforms:
+  - name: GenericUNIX
+    versions:
+    - all
+  - name: GenericBSD
+    versions:
+    - all
+  - name: GenericLinux
+    versions:
+    - all
+  categories:
+  - system
+dependencies:
+  - { role: GROG.user,
+        user_list: "{{ management_user_list }}"
+    }
+  - { role: GROG.authorized-key,
+        authorized_key_list: "{{ management_user_list }}"
+    }
+  - { role: GROG.sudo,
+        sudo_list: "{{ management_user_list }}"
+    }

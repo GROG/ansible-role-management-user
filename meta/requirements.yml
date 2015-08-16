@@ -1,0 +1,5 @@
+- src: GROG.user
+
+- src: GROG.authorized-key
+
+- src: GROG.sudo

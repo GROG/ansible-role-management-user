@@ -1,0 +1,17 @@
+---
+
+management_user_settings:
+  name: management
+  comment: Ansible
+  shell: '/bin/bash'
+  authorized_keys:
+    - key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+  sudo:
+    hosts: ALL
+    as: ALL
+    commands: ALL
+    nopasswd: yes
+
+management_user_list:
+  - "{{ management_user_settings }}"
+
