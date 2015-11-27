@@ -19,11 +19,17 @@ galaxy_info:
   - system
 dependencies:
   - { role: GROG.user,
-        user_list: "{{ management_user_list }}"
+        user_list: "{{ management_user_list }}",
+        user_list_host: "{{ management_user_list_host }}",
+        user_list_group: "{{ management_user_list_group }}"
     }
   - { role: GROG.authorized-key,
-        authorized_key_list: "{{ management_user_list }}"
+        authorized_key_list: "{{ management_user_list }}",
+        authorized_key_list_host: "{{ management_user_list_host }}",
+        authorized_key_list_group: "{{ management_user_list_group }}"
     }
   - { role: GROG.sudo,
         sudo_list: "{{ management_user_list }}"
+        sudo_list_host: "{{ management_user_list_host }}",
+        sudo_list_group: "{{ management_user_list_group }}"
     }

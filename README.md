@@ -17,7 +17,14 @@ A role for managing a management user.
 
 | Variable | Description | Default value |
 |----------|-------------|---------------|
+| `management_user_list` | List of management users | `[ management_user_settings ]` |
+| `management_user_list_host` | List of management users | `[]` |
+| `management_user_list_group` | List of management users | `[]` |
 | `management_user_settings` | Settings for the management user **(see details!)** | see details |
+
+`management_user_list`, `_list_host` and `_list_group` are merged when managing the
+users. You can use the host and group lists to specify users per host or group
+off hosts.
 
 #### `management_user_settings` details
 
