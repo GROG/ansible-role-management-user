@@ -1,7 +1,10 @@
 # Management user
 
-[![Ansible Galaxy](http://img.shields.io/badge/galaxy-GROG.management--user-660198.svg?style=flat)](https://galaxy.ansible.com/GROG/management-user)
-[![Build Status](https://travis-ci.org/GROG/ansible-role-management-user.svg?branch=master)](https://travis-ci.org/GROG/ansible-role-management-user)
+[![Ansible Galaxy][galaxy_image]][galaxy_link]
+[![Build Status][travis_image]][travis_link]
+[![Latest tag][tag_image]][tag_url]
+[![Gitter chat][gitter_image]][gitter_url]
+
 
 A role for managing a management user.
 
@@ -44,17 +47,16 @@ management_user_settings:
     nopasswd: yes
 ```
 
-It is however recomended to use your own custom user settings. More
-information about the available attributes can be found in the documentation of
-the GROG [user](https://galaxy.ansible.com/list#/roles/4730),
-[authorized-key](https://galaxy.ansible.com/list#/roles/4737) and
-[sudo](https://galaxy.ansible.com/list#/roles/4765) roles.
+It is however recomended to use your own custom user settings. More information
+about the available attributes can be found in the documentation of the GROG
+[user][grog.user], [authorized-key][grog.authorized-key] and [sudo][grog.sudo]
+roles.
 
 ## Dependencies
 
-- [GROG.user](https://galaxy.ansible.com/list#/roles/4730)
-- [GROG.authorized-key](https://galaxy.ansible.com/list#/roles/4737)
-- [GROG.sudo](https://galaxy.ansible.com/list#/roles/4765)
+- [GROG.user][grog.user]
+- [GROG.authorized-key][grog.authorized-key]
+- [GROG.sudo][grog.sudo]
 
 ## Example Playbook
 
@@ -66,12 +68,26 @@ the GROG [user](https://galaxy.ansible.com/list#/roles/4730),
 ```
 
 ## Contributing
-
-All assistance, changes or ideas [welcome](https://github.com/GROG/ansible-role-management-user/issues)!
+All assistance, changes or ideas [welcome][issues]!
 
 ## Author
-
-By [G. Roggemans](https://github.com/groggemans)
+By [G. Roggemans][groggemans]
 
 ## License
 MIT
+
+[galaxy_image]:         http://img.shields.io/badge/galaxy-GROG.management--user-660198.svg?style=flat
+[galaxy_link]:          https://galaxy.ansible.com/GROG/management-user
+[travis_image]:         https://travis-ci.org/GROG/ansible-role-management-user.svg?branch=master
+[travis_link]:          https://travis-ci.org/GROG/ansible-role-management-user
+[tag_image]:            https://img.shields.io/github/tag/GROG/ansible-role-management-user.svg
+[tag_url]:              https://github.com/GROG/ansible-role-management-user/tags
+[gitter_image]:         https://badges.gitter.im/GROG/chat.svg
+[gitter_url]:           https://gitter.im/GROG/chat
+
+[grog.user]:            https://galaxy.ansible.com/GROG/user
+[grog.authorized-key]:  https://galaxy.ansible.com/GROG/authorized-key
+[grog.sudo]:            https://galaxy.ansible.com/GROG/sudo
+
+[issues]:               https://github.com/GROG/ansible-role-management-user/issues
+[groggemans]:           https://github.com/groggemans
