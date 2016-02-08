@@ -2,6 +2,9 @@
 
 [![Ansible Galaxy][galaxy_image]][galaxy_link]
 [![Build Status][travis_image]][travis_link]
+[![Latest tag][tag_image]][tag_url]
+[![Gitter chat][gitter_image]][gitter_url]
+
 
 A role for managing a management user.
 
@@ -77,6 +80,10 @@ MIT
 [galaxy_link]:          https://galaxy.ansible.com/GROG/management-user
 [travis_image]:         https://travis-ci.org/GROG/ansible-role-management-user.svg?branch=master
 [travis_link]:          https://travis-ci.org/GROG/ansible-role-management-user
+[tag_image]:            https://img.shields.io/github/tag/GROG/ansible-role-management-user.svg
+[tag_url]:              https://github.com/GROG/ansible-role-management-user/tags
+[gitter_image]:         https://badges.gitter.im/GROG/chat.svg
+[gitter_url]:           https://gitter.im/GROG/chat
 
 [grog.user]:            https://galaxy.ansible.com/GROG/user
 [grog.authorized-key]:  https://galaxy.ansible.com/GROG/authorized-key
