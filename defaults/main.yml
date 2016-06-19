@@ -1,11 +1,14 @@
 ---
 
+management_user_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
 management_user_settings:
   name: management
   comment: Ansible
   shell: '/bin/bash'
   authorized_keys:
-    - key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    - key: "{{ management_user_key }}"
+      exclusive: yes
   sudo:
     hosts: ALL
     as: ALL

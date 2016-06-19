@@ -23,7 +23,8 @@ A role for managing a management user.
 | `management_user_list` | List of management users | `[ management_user_settings ]` |
 | `management_user_list_host` | List of management users | `[]` |
 | `management_user_list_group` | List of management users | `[]` |
-| `management_user_settings` | Settings for the management user **(see details!)** | see details |
+| `management_user_settings` | Default Settings for the management user **(see details!)** | see details |
+| `management_user_key` | SSH key for the default user settings | `~/.ssh/id_rsa.pub` |
 
 `management_user_list`, `_list_host` and `_list_group` are merged when managing the
 users. You can use the host and group lists to specify users per host or group
@@ -34,18 +35,24 @@ off hosts.
 By default a user with following data will be created;
 
 ```yaml
+management_user_key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
 management_user_settings:
   name: management
   comment: Ansible
   shell: '/bin/bash'
   authorized_keys:
-    - key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    - key: "{{ management_user_key }}"
+      exclusive: yes
   sudo:
     hosts: ALL
     as: ALL
     commands: ALL
     nopasswd: yes
 ```
+
+When using the default settings, the ssh key can be overridden using the
+`management_user_key` variable.
 
 It is however recomended to use your own custom user settings. More information
 about the available attributes can be found in the documentation of the GROG
