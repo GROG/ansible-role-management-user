@@ -1,5 +1,8 @@
 - src: GROG.user
+  version: v1.2.1
 
 - src: GROG.authorized-key
+  version: v1.1.1
 
 - src: GROG.sudo
+  version: v1.2.2
