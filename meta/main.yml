@@ -23,6 +23,9 @@ galaxy_info:
   - authorized
   - key
   - system
+
+allow_duplicates: yes
+
 dependencies:
   - { role: GROG.user,
         user_list: "{{ management_user_list }}",
