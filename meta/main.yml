@@ -40,7 +40,7 @@ dependencies:
     authorized_key_list_group: "{{ management_user_list_group }}"
 
   - role: GROG.sudo
-    version: v1.3.2
+    version: v1.4.4
     sudo_list: "{{ management_user_list }}"
     sudo_list_host: "{{ management_user_list_host }}"
     sudo_list_group: "{{ management_user_list_group }}"
