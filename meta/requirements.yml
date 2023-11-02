@@ -1,5 +1,5 @@
 - src: GROG.user
-  version: v1.3.0
+  version: v1.3.1
 
 - src: GROG.authorized-key
   version: v1.1.5
